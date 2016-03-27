@@ -166,8 +166,10 @@
 		</div>
 	</div>
 
-	<script src="_/site/js/jq.js"></script>
-	<script src="_/site/js/jqui.js"></script>
-	<script src="_/site/js/script.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+	<script>
+		$(document).ready(function(){function t(t){p=t.index()+1,0===p%2?($(".tile").not(t).not(t.prev()).animate({height:a-.5*a+"px",width:o+"px"},h,r),t.prev().animate({height:a+.5*a+"px",width:o-.5*o+"px"},h,r)):($(".tile").not(t).not(t.next()).animate({height:a-.5*a+"px",width:o+"px"},h,r),t.next().animate({height:a+.5*a+"px",width:o-.5*o+"px"},h,r)),t.animate({height:a+.5*a+"px",width:o+.5*o+"px"},h,r),$(".tile").css("cursor","pointer"),t.css("cursor","default")}function e(t){$(".tile-container").fadeOut(h/2),t.children(".tile-container").fadeIn(h/2)}function i(t){return parseInt(100*(t/c))}function n(t){return 30>=t?"i'm amature in this":50>=t?"i'm used to this":70>=t?"have been working for a while":100>=t?"have been working for a long time":void 0}var a=$(".tile").height(),o=$(".tile").width(),h=290,r="easeOutBack",p=0,s="";$(".tile").on("click",function(){(""===s||s!=$(this).index())&&(t($(this)),e($(this)),s=$(this).index())});var d=new Date;$("#copyright-year").html(d.getFullYear());var c="";$(".bar").hover(function(){""===c&&(c=$(this).parent().width());var t=n(i($(this).width()));$(this).data("tipText",t).removeAttr("title"),$('<p class="tooltip"></p>').text(t).appendTo("body").fadeIn("fast")},function(){$(this).attr("title",$(this).data("tipText")),$(".tooltip").remove()}).mousemove(function(t){var e=t.pageX+20,i=t.pageY+10;$(".tooltip").css({top:i,left:e})})});
+	</script>
 </body>
 </html>
