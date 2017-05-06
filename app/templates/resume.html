@@ -51,8 +51,9 @@
     <div class="section">
         <div class="section-header">Other Work Experiences</div>
         <div class="section-content" ng-repeat="experience in vm.resumeData.otherWorkExperiences">
-            <div class="company-detail">
-                <span>{{experience.joinedDate | date: vm.dateFormat}} - {{experience.resignedDate | date: vm.dateFormat}}</span>
+            <div class="job-detail">
+                <span class="name">{{experience.jobSummary}}</span>
+                <span class="duration">{{experience.joinedDate | date: vm.dateFormat}} - {{experience.resignedDate | date: vm.dateFormat}}</span>
             </div>
             <div class="job-description">
                 <ul>
