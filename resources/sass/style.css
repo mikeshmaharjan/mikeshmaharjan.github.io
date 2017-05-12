@@ -1,0 +1,102 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: none; }
+
+body {
+  font-family: Arial, serif;
+  color: #222;
+  font-size: 13px; }
+
+.container {
+  padding: 40px; }
+  .container .section .section-header {
+    color: #39A9EB;
+    border-bottom: 2px solid #39A9EB;
+    margin: 20px 0 10px 0;
+    text-transform: uppercase;
+    font-size: 18.2px; }
+  .container .section .section-content {
+    margin: 10px 0; }
+    .container .section .section-content .company-detail span.name, .container .section .section-content .institute-detail span.name {
+      font-size: 14.3px;
+      font-weight: bold; }
+    .container .section .section-content .company-detail span.address, .container .section .section-content .institute-detail span.address {
+      float: right; }
+    .container .section .section-content .job-detail span.title, .container .section .section-content .education-detail span.title, .container .section .section-content .certification-detail span.title {
+      font-size: 14.3px;
+      font-style: italic; }
+    .container .section .section-content .job-detail span.duration, .container .section .section-content .education-detail span.duration, .container .section .section-content .certification-detail span.duration {
+      float: right;
+      font-style: italic; }
+    .container .section .section-content .job-description ul {
+      list-style: disc;
+      margin: 5px 0 5px 18px; }
+      .container .section .section-content .job-description ul li {
+        margin: 5px 0; }
+  .container #personalInformation.section {
+    text-align: center;
+    line-height: 20px; }
+    .container #personalInformation.section span.name {
+      color: #39A9EB;
+      font-size: 26px;
+      text-transform: uppercase; }
+
+.tiles-container {
+  background-color: #2F3139;
+  color: #fff;
+  margin: auto; }
+  .tiles-container .tile {
+    cursor: pointer;
+    float: left;
+    padding: 10px; }
+  .tiles-container .tile:nth-child(1) {
+    background-color: #C43044; }
+  .tiles-container .tile:nth-child(2) {
+    background-color: #11998C; }
+  .tiles-container .tile:nth-child(3) {
+    background-color: #14576F; }
+  .tiles-container .tile:nth-child(4) {
+    background-color: #3C3E49; }
+
+#resumeContainer .container {
+  background-color: #FFF;
+  color: #222; }
+
+@media screen and (min-width: 400px) {
+  .container {
+    width: 100%; }
+    .container .tile {
+      width: 100%;
+      height: 150px; } }
+@media screen and (min-width: 600px) {
+  .container {
+    width: 100%; }
+    .container .tile {
+      width: 100%;
+      height: 200px; } }
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 100%; }
+    .container .tile {
+      width: 50%;
+      height: 300px; } }
+@media screen and (min-width: 1400px) {
+  .container {
+    width: 1400px; }
+    .container .tile {
+      width: 50%; } }
+hr.spacer-5 {
+  border: none;
+  margin: 5px 0; }
+
+hr.spacer-10 {
+  border: none;
+  margin: 10px 0; }
+
+/*# sourceMappingURL=style.css.map */

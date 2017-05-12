@@ -1,175 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-	<link rel="shortcut icon" href="assets/img/logo/logo.ico">
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>My Site</title>
-	<!-- <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'> -->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-	<link href="assets/css/style.css" rel="stylesheet">
-
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mikesh Maharjan</title>
+    <link rel="stylesheet" href="resources/sass/style.css">
 </head>
-<body>
+<body ng-app="mm">
 
-	<div id="wrapper">
-		<div class="tile-wrapper">
-			<div id="home" class="tile">
-				<div class="big-header">
-					<h1>Welcome</h1>
-				</div>
-				<div class="tile-container">
-					<p>hello, i'm <span class="em em-2"><a href="#">Mikesh Maharjan</a></span>, a <span class="em em-2">Java developer</span>.</p>
-					<p>i graduated from <span class="em em-2"><a href="http://sxc.edu.np/" target="_blank">St.Xavier's</a></span> College</p>
-					<p>i worked in <span class="em em-2"><a href="http://www.yomari.com.np/" target="_blank">Yomari Inc.</a></span> as an intern</p>
-					<p>i worked in <span class="em em-2"><a href="http://http://sdata.us/" target="_blank">Smart Data Solutions</a></span> as a Java Developer</p>
-					<p>i am currently working in <span class="em em-2"><a href="http://www.pointclickcare.com/">Point Click Care</a></span></p>
-					<p>my current research <span class="em em-2"><a href="http://docs.oracle.com/javafx/" target="_blank">Javafx</a></span> & <span class="em em-2"><a href="http://www.android.com/" target="_blank">Android</a></span> </p>
-				</div>
-			</div>
-			<div id="work" class="tile">
-				<div class="big-header">
-					<h1>My Works</h1>
-				</div>
-				<div class="tile-container">
-					<div class="work-tile">More works comming soon.</div>
-					<div class="work-tile">More works comming soon.</div>
-					<div class="work-tile">More works comming soon.</div>
-					<div class="work-tile">More works comming soon.</div>
-				</div>
-			</div>
-			<div id="about" class="tile">
-				<div class="big-header">
-					<h1>About Me</h1>
-				</div>
-				<div class="tile-container">
-					<div id="about-description" class="about-tile">
-						<p>i am currently working as a <span class="em em-2">Java developer</span>.</p>
-						<p>i've worked as a <span class="em em-2">Php developer</span> as well, some of my work can be found in this site itself.</p>
-						<p>though i'm not a designer, i'm used to basic <span class="em em-2">designing skills</span>.</p>
-						<p>take a look at my <span class="em em-2 un"><a href="cv.html" target="_blank">C.V.</a></span> if necessary.</p>
+<div ng-view></div>
 
-						<div class="skill-wrapper">
-							<div class="heading"><a href="http://php.net/" target="_blank">Designing Skills</a></div>
-							<div class="body">
-								<div class="item">
-									<div class="title"><a href="http://php.net/" target="_blank">Photoshop</a></div>
-									<div class="level"><div class="bar"  style="width: 20%;"></div></div>
-								</div>
-								<div class="item">
-									<div class="title"><a href="http://ellislab.com/codeigniter" target="_blank">HTML</a></div>
-									<div class="level"><div class="bar" style="width:75%"></div></div>
-								</div>
-								<div class="item">
-									<div class="title"><a href="http://laravel.com/" target="_blank">CSS</a></div>
-									<div class="level"><div class="bar" style="width:72%"></div></div>
-								</div>
-							</div>
-						</div>
+<script src="resources/lib/angular/angular.min.js"></script>
+<script src="resources/lib/angular/angular-route.min.js"></script>
 
-					</div>
-					<div class="about-tile">
-						<div>Stuffs i Know</div>
-						<div class="skill-wrapper">
-							<div class="heading"><a href="http://php.net/" target="_blank">Php</a></div>
-							<div class="body">
-								<div class="item">
-									<div class="title"><a href="http://php.net/" target="_blank">Core</a></div>
-									<div class="level"><div class="bar" style="width:72%"></div></div>
-								</div>
-								<div class="item">
-									<div class="title"><a href="http://ellislab.com/codeigniter" target="_blank">CodeIgniter</a></div>
-									<div class="level"><div class="bar" style="width:80%"></div></div>
-								</div>
-								<div class="item">
-									<div class="title"><a href="http://laravel.com/" target="_blank">Laravel</a></div>
-									<div class="level"><div class="bar" style="width:70%"></div></div>
-								</div>
-								<div class="item">
-									<div class="title"><a href="http://wordpress.org/" target="_blank">Wordpress</a></div>
-									<div class="level"><div class="bar" style="width:34%"></div></div>
-								</div>
-							</div>
-						</div>
-						<div class="skill-wrapper">
-							<div class="heading"><a href="https://developer.mozilla.org/en/docs/Web/JavaScript" target="_blank">JavaScript</a></div>
-							<div class="body">
-								<div class="item">
-									<div class="title"><a href="https://developer.mozilla.org/en/docs/Web/JavaScript" target="_blank">Core</a></div>
-									<div class="level"><div class="bar" style="width:70%"></div></div>
-								</div>
-								<div class="item">
-									<div class="title"><a href="http://jquery.com/" target="_blank">Jquery</a></div>
-									<div class="level"><div class="bar" style="width:80%"></div></div>
-								</div>
-								<div class="item">
-									<div class="title"><a href="http://angularjs.org/" target="_blank">Angularjs</a></div>
-									<div class="level"><div class="bar" style="width:60%"></div></div>
-								</div>
-							</div>
-						</div>
-						<div class="skill-wrapper">
-							<div class="heading"><a href="http://java.com/en/download/index.jsp" target="_blank">Java</a></div>
-							<div class="body">
-								<div class="item">
-									<div class="title"><a href="http://java.com/en/download/index.jsp" target="_blank">Core</a></div>
-									<div class="level"><div class="bar" style="width:55%"></div></div>
-								</div>
-								<div class="item">
-									<div class="title"><a href="https://javaserverfaces.java.net/" target="_blank">JSF</a></div>
-									<div class="level"><div class="bar" style="width:65%"></div></div>
-								</div>
-								<div class="item">
-									<div class="title"><a href="http://hibernate.org/" target="_blank">Hibernate</a></div>
-									<div class="level"><div class="bar" style="width:35%"></div></div>
-								</div>
-								<div class="item">
-									<div class="title"><a href="http://spring.io/" target="_blank">Spring</a></div>
-									<div class="level"><div class="bar" style="width:40%"></div></div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="contact" class="tile">
-				<div class="big-header">
-					<h1>Contact Me</h1>
-				</div>
-				<div class="tile-container">
-					<a href="https://www.facebook.com/MrMikeMj">
-						<div id="facebook" class="social-tile">
-							<img src="assets/img/gallery/fb.png" alt="Twitter">
-						</div>
-					</a>
-					<a href="https://twitter.com/MikeshMaharjan">
-					<div id="twitter" class="social-tile">
-						<img src="assets/img/gallery/tw.png" alt="Twitter">
-					</div>
-					</a>
-					<a href="http://np.linkedin.com/in/mikeshmaharjan">
-					<div id="linkedin" class="social-tile">
-						<img src="assets/img/gallery/in.png" alt="Twitter">
-					</div>
-					</a>
-					<a href="http://mikeshmaharjan.wordpress.com">
-					<div id="wordpress" class="social-tile">
-						<img src="assets/img/gallery/wp.png" alt="Twitter">
-					</div>
-					</a>
-				</div>
-			</div>
-		</div>
-		<div id="footer">
-			Copyright © <a href="#">mikeshmaharjan.github.io</a> <span id="copyright-year"></span> All Rights Reserved.
-		</div>
-	</div>
+<!--App & Config-->
+<script src="app/app.js"></script>
+<script src="app/config.js"></script>
 
-	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script src="https://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
-	<script>
-		$(document).ready(function(){function t(t){p=t.index()+1,0===p%2?($(".tile").not(t).not(t.prev()).animate({height:a-.5*a+"px",width:o+"px"},h,r),t.prev().animate({height:a+.5*a+"px",width:o-.5*o+"px"},h,r)):($(".tile").not(t).not(t.next()).animate({height:a-.5*a+"px",width:o+"px"},h,r),t.next().animate({height:a+.5*a+"px",width:o-.5*o+"px"},h,r)),t.animate({height:a+.5*a+"px",width:o+.5*o+"px"},h,r),$(".tile").css("cursor","pointer"),t.css("cursor","default")}function e(t){$(".tile-container").fadeOut(h/2),t.children(".tile-container").fadeIn(h/2)}function i(t){return parseInt(100*(t/c))}function n(t){return 30>=t?"i'm amature in this":50>=t?"i'm used to this":70>=t?"have been working for a while":100>=t?"have been working for a long time":void 0}var a=$(".tile").height(),o=$(".tile").width(),h=290,r="easeOutBack",p=0,s="";$(".tile").on("click",function(){(""===s||s!=$(this).index())&&(t($(this)),e($(this)),s=$(this).index())});var d=new Date;$("#copyright-year").html(d.getFullYear());var c="";$(".bar").hover(function(){""===c&&(c=$(this).parent().width());var t=n(i($(this).width()));$(this).data("tipText",t).removeAttr("title"),$('<p class="tooltip"></p>').text(t).appendTo("body").fadeIn("fast")},function(){$(this).attr("title",$(this).data("tipText")),$(".tooltip").remove()}).mousemove(function(t){var e=t.pageX+20,i=t.pageY+10;$(".tooltip").css({top:i,left:e})})});
-	</script>
+<!--Components-->
+<!--<script src="app/components/ResumeComponent.js"></script>-->
+<!--<script src="app/components/AppComponent.js"></script>-->
+
+<!--Services-->
+<script src="app/services/ResumeDataService.js"></script>
+
+<!--Controllers-->
+<script src="app/controllers/AppController.js"></script>
+<script src="app/controllers/ResumeController.js"></script>
+
 </body>
 </html>
