@@ -12,6 +12,7 @@
         var vm = this;
         vm.resumeData = [];
         vm.dateFormat = 'LLLL yyyy';
+        vm.fullDateFormat = 'dd LLLL yyyy';
 
 
         load();

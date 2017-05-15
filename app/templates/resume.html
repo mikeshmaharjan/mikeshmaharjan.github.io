@@ -10,6 +10,8 @@
         <br>
         {{vm.resumeData.personalInformation.contactNumber}}
         <br>
+        Date of Birth: {{vm.resumeData.personalInformation.dateOfBirth  | date: vm.fullDateFormat}}
+        <br>
         {{vm.resumeData.personalInformation.primaryEmail}}
         {{vm.resumeData.personalInformation.secondaryEmail ? ', ' : ''}}
         {{vm.resumeData.personalInformation.secondaryEmail}}
@@ -36,6 +38,12 @@
         </div>
     </div>
     <div class="section">
+        <div class="section-header">Languages</div>
+        <div class="section-content">
+            English, Nepali
+        </div>
+    </div>
+    <div class="section">
         <div class="section-header">Education</div>
         <div class="section-content" ng-repeat="education in vm.resumeData.educationHistory">
             <div class="institute-detail">
@@ -52,7 +60,7 @@
         <div class="section-header">Other Work Experiences</div>
         <div class="section-content" ng-repeat="experience in vm.resumeData.otherWorkExperiences">
             <div class="job-detail">
-                <span class="name">{{experience.jobSummary}}</span>
+                <strong><span class="name">{{experience.jobSummary}}</span></strong>
                 <span class="duration">{{experience.joinedDate | date: vm.dateFormat}} - {{experience.resignedDate | date: vm.dateFormat}}</span>
             </div>
             <div class="job-description">
@@ -74,5 +82,13 @@
                 <span class="duration">{{certification.certifiedDate | date: vm.dateFormat}}</span>
             </div>
         </div>
+    </div>
+    <div class="section">
+        <div class="section-header">Additional Information</div>
+        Current Salary: {{vm.resumeData.personalInformation.currentSalary}}
+        <br>
+        Expected Salary: {{vm.resumeData.personalInformation.expectedSalary}}
+        <br>
+        Availability: {{vm.resumeData.personalInformation.availability}}
     </div>
 </div>
