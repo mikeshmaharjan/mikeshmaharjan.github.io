@@ -1,78 +1,8 @@
 <div class="container">
-    <div id="personalInformation" class="section">
-        <span class="name">
-        {{vm.resumeData.personalInformation.firstName}} {{vm.resumeData.personalInformation.lastName}}
-        </span>
-        <br>
-        {{vm.resumeData.personalInformation.address}}
-        <br>
-        {{vm.resumeData.personalInformation.extendedAddress}}
-        <br>
-        {{vm.resumeData.personalInformation.contactNumber}}
-        <br>
-        {{vm.resumeData.personalInformation.primaryEmail}}
-        {{vm.resumeData.personalInformation.secondaryEmail ? ', ' : ''}}
-        {{vm.resumeData.personalInformation.secondaryEmail}}
-        <br>
-        <br>
-        <em>{{vm.resumeData.personalInformation.summary}}</em>
+    <div class="content">
+        <p>find my resume <a ng-href="{{vm.resumeLink}}" target="_blank">here (link to google docs)</a></p>
     </div>
-    <div class="section">
-        <div class="section-header">Professional Experiences</div>
-        <div class="section-content" ng-repeat="experience in vm.resumeData.professionalExperiences">
-            <div class="company-detail">
-                <span class="name">{{experience.company.name}}</span>
-                <span class="address">{{experience.company.address}}</span>
-            </div>
-            <div class="job-detail">
-                <span class="title">{{experience.jobTitle}}</span>
-                <span class="duration">{{experience.joinedDate | date: vm.dateFormat}} - {{experience.resignedDate | date: 'LLLL yyyy'}}</span>
-            </div>
-            <div class="job-description">
-                <ul>
-                    <li ng-repeat="description in experience.jobDescription">{{description}}</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="section">
-        <div class="section-header">Education</div>
-        <div class="section-content" ng-repeat="education in vm.resumeData.educationHistory">
-            <div class="institute-detail">
-                <span class="name">{{education.institute.name}}</span>
-                <span class="address">{{education.institute.address}}</span>
-            </div>
-            <div class="education-detail">
-                <span class="title">{{education.level}} {{education.degreeName ? '-' : ''}} {{education.degreeName}}</span>
-                <span class="duration">{{education.startedDate | date: vm.dateFormat}} - {{education.completedDate | date: vm.dateFormat}}</span>
-            </div>
-        </div>
-    </div>
-    <div class="section">
-        <div class="section-header">Other Work Experiences</div>
-        <div class="section-content" ng-repeat="experience in vm.resumeData.otherWorkExperiences">
-            <div class="job-detail">
-                <span class="name">{{experience.jobSummary}}</span>
-                <span class="duration">{{experience.joinedDate | date: vm.dateFormat}} - {{experience.resignedDate | date: vm.dateFormat}}</span>
-            </div>
-            <div class="job-description">
-                <ul>
-                    <li ng-repeat="description in experience.jobDescription">{{description}}</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="section">
-        <div class="section-header">Certifications</div>
-        <div class="section-content" ng-repeat="certification in vm.resumeData.certifications">
-            <div class="institute-detail">
-                <span class="name">{{certification.institute.name}}</span>
-                <span class="address">{{certification.institute.address}}</span>
-            </div>
-            <div class="certification-detail">
-                <span class="name">{{certification.certification}}</span>
-                <span class="duration">{{certification.certifiedDate | date: vm.dateFormat}}</span>
-            </div>
-        </div>
-    </div>
+
+    <iframe class="resume-gdocs-iframe"
+            src="https://docs.google.com/document/d/1rTEvNItk0atCE-7j7BnlxrGYbD_IvZswegZ3N6xymQ4/pub?embedded=true"></iframe>
 </div>

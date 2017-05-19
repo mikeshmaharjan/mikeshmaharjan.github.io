@@ -1,26 +1,17 @@
-(function() {
+(function () {
     'use strict';
 
     angular
         .module('mm')
         .controller('ResumeController', ResumeController);
 
-    ResumeController.$inject = ['ResumeDataService'];
+    ResumeController.$inject = [];
 
-    function ResumeController(ResumeDataService) {
+    function ResumeController() {
 
         var vm = this;
-        vm.resumeData = [];
-        vm.dateFormat = 'LLLL yyyy';
 
-
-        load();
-
-        function load() {
-            ResumeDataService.getResumeData().then(function(result) {
-                vm.resumeData = result.data;
-            });
-        }
+        vm.resumeLink = 'https://docs.google.com/document/d/1rTEvNItk0atCE-7j7BnlxrGYbD_IvZswegZ3N6xymQ4/edit?usp=sharing';
     }
 
 })();
