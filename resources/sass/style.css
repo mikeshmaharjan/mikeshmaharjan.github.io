@@ -47,21 +47,22 @@ body {
       font-size: 26px;
       text-transform: uppercase; }
 
-.tiles-container {
+.container.tiles-container {
   background-color: #2F3139;
   color: #fff;
-  margin: auto; }
-  .tiles-container .tile {
+  margin: auto;
+  padding: 0; }
+  .container.tiles-container .tile {
     cursor: pointer;
     float: left;
     padding: 10px; }
-  .tiles-container .tile:nth-child(1) {
+  .container.tiles-container .tile:nth-child(1) {
     background-color: #C43044; }
-  .tiles-container .tile:nth-child(2) {
+  .container.tiles-container .tile:nth-child(2) {
     background-color: #11998C; }
-  .tiles-container .tile:nth-child(3) {
+  .container.tiles-container .tile:nth-child(3) {
     background-color: #14576F; }
-  .tiles-container .tile:nth-child(4) {
+  .container.tiles-container .tile:nth-child(4) {
     background-color: #3C3E49; }
 
 #resumeContainer .container {

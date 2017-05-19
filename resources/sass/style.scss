@@ -72,10 +72,11 @@ body {
   }
 }
 
-.tiles-container {
+.container.tiles-container {
   background-color: #2F3139;
   color: #fff;
   margin: auto;
+  padding: 0;
 
   .tile {
     cursor: pointer;
