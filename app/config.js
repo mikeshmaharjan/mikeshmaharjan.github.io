@@ -1,11 +1,12 @@
-(function() {
+(function () {
     'use strict';
 
     angular
         .module('mm')
         .config(config);
 
-    function config($routeProvider, $locationProvider) {
+    function config($routeProvider) {
+
         $routeProvider
             .when('/', {
                 templateUrl: 'app/templates/app.html',
@@ -16,9 +17,14 @@
                 templateUrl: 'app/templates/resume.html',
                 controller: 'ResumeController',
                 controllerAs: 'vm'
-            }).otherwise({redirectTo: '/'});
-
-        // $locationProvider.html5Mode(true);
+            })
+            .when('/about', {
+                templateUrl: 'app/templates/about.html'
+            })
+            .when('/contact', {
+                templateUrl: 'app/templates/contact.html'
+            })
+            .otherwise({redirectTo: '/'});
     }
 
 })();

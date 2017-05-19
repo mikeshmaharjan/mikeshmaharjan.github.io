@@ -3,14 +3,30 @@
 <head>
     <base href="/">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mikesh Maharjan</title>
     <link rel="stylesheet" href="resources/sass/style.css">
 </head>
 <body ng-app="mm">
-
-<div ng-view></div>
+<div class="container">
+    <ul class="nav-bar">
+        <li>
+            <a ng-href="#!/">home</a>
+        </li>
+        <li>
+            <a ng-href="#!/resume">resume</a>
+        </li>
+        <li>
+            <a ng-href="#!/about">about me</a>
+        </li>
+        <li>
+            <a ng-href="#!/contact">contact me</a>
+        </li>
+    </ul>
+    <div ng-view></div>
+</div>
 
 <script src="resources/lib/angular/angular.min.js"></script>
 <script src="resources/lib/angular/angular-route.min.js"></script>
@@ -18,13 +34,6 @@
 <!--App & Config-->
 <script src="app/app.js"></script>
 <script src="app/config.js"></script>
-
-<!--Components-->
-<!--<script src="app/components/ResumeComponent.js"></script>-->
-<!--<script src="app/components/AppComponent.js"></script>-->
-
-<!--Services-->
-<script src="app/services/ResumeDataService.js"></script>
 
 <!--Controllers-->
 <script src="app/controllers/AppController.js"></script>

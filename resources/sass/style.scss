@@ -1,3 +1,9 @@
+$base-font-size: 14px;
+$base-font-color: #222;
+$link-color: #0077CC;
+$primary-color: #39A9EB;
+$background-color: #fff;
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -10,141 +16,88 @@ ul {
   list-style: none;
 }
 
-$base-font-size: 13px;
-$base-font-color: #222;
-$primary-color: #39A9EB;
+a {
+  text-decoration: none;
+  color: $link-color;
+}
+
 body {
-  font-family: Arial, serif;
+  background-color: $background-color;
   color: $base-font-color;
+  font-family: Arial, serif;
   font-size: $base-font-size;
 }
 
 .container {
-  padding: 40px;
-  .section {
-    .section-header {
-      color: $primary-color;
-      border-bottom: 2px solid $primary-color;
-      margin: 20px 0 10px 0;
-      text-transform: uppercase;
-      font-size: $base-font-size * 1.4;
-    }
-    .section-content {
-      margin: 10px 0;
-      .company-detail, .institute-detail {
-        span.name {
-          font-size: $base-font-size * 1.1;
-          font-weight: bold;
-        }
-        span.address {
-          float: right;
-        }
-      }
-      .job-detail, .education-detail, .certification-detail {
-        span.title {
-          font-size: $base-font-size * 1.1;
-          font-style: italic;
-        }
-        span.duration {
-          float: right;
-          font-style: italic;
-        }
-      }
-      .job-description {
-        ul {
-          list-style: disc;
-          margin: 5px 0 5px 18px;
-          li {
-            margin: 5px 0;
-          }
-        }
-      }
-    }
-  }
-  #personalInformation.section {
+  margin: 20px auto;
+  ul.nav-bar {
+    border-top: 1px solid $base-font-color;
+    border-bottom: 1px solid $base-font-color;
+    font-size: $base-font-size * 1.2;
+    min-height: 1px;
+    overflow: auto;
     text-align: center;
-    line-height: 20px;
-    span.name {
-      color: $primary-color;
-      font-size: $base-font-size * 2;
-      text-transform: uppercase;
+    width: 100%;
+    li {
+      display: inline-block;
+      padding: 5px 10px;
+      a {
+        color: $base-font-color;
+        display: block;
+      }
     }
   }
-}
+  .content {
+    p {
+      padding: 10px;
+      text-align: center;
+      span.em {
+        font-size: $base-font-size * 1.2;
+      }
+    }
+    ul.skill-list {
+      li {
+        border: 1px solid $base-font-color;
+        border-radius: 20%;
+        float: left;
+        padding: 5px;
+        margin: 5px 5px;
+        a {
 
-.container.tiles-container {
-  background-color: #2F3139;
-  color: #fff;
-  margin: auto;
-  padding: 0;
-
-  .tile {
-    cursor: pointer;
-    float: left;
-    padding: 10px;
-  }
-
-  .tile:nth-child(1) {
-    background-color: #C43044;
-  }
-
-  .tile:nth-child(2) {
-    background-color: #11998C;
-  }
-
-  .tile:nth-child(3) {
-    background-color: #14576F;
-  }
-
-  .tile:nth-child(4) {
-    background-color: #3C3E49;
-  }
-}
-
-#resumeContainer {
-  .container {
-    background-color: #FFF;
-    color: #222;
-  }
-}
-
-@media screen and (min-width: 400px) {
-  .container {
-    width: 100%;
-    .tile {
-      width: 100%;
-      height: 150px;
+        }
+      }
     }
   }
+  .resume-gdocs-iframe {
+    border: none;
+    height: 1200px;
+    width: 100%;
+  }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   .container {
-    width: 100%;
-    .tile {
-      width: 100%;
-      height: 200px;
+    margin: 0 auto;
+    ul.nav-bar {
+      li {
+        float: none;
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .resume-gdocs-iframe {
+      display: none;
     }
   }
 }
 
 @media screen and (min-width: 1000px) {
   .container {
-    width: 100%;
-    .tile {
-      width: 50%;
-      height: 300px;
-    }
+    width: 1000px;
   }
 }
 
 @media screen and (min-width: 1400px) {
-  .container {
-    width: 1400px;
-    .tile {
-      width: 50%;
-    }
-  }
 }
 
 hr.spacer-5 {
